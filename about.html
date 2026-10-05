@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Sobre mí | Jose Armando Diaz Salazar</title>
+  <meta name="description" content="Conoce a Jose Armando Diaz Salazar y las tecnologías con las que trabaja.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">J. Armando Diaz</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav id="menu" class="nav">
+      <a href="index.html">Inicio</a>
+      <a href="about.html" aria-current="page">Sobre mí</a>
+      <a href="index.html#proyectos">Proyectos</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="section about">
+      <figure class="about-photo">
+        <img src="img/foto-2.jpeg" alt="Jose Armando Diaz Salazar sonriendo, de traje negro" width="528" height="1261">
+      </figure>
+      <div class="about-text">
+        <h1>Sobre mí</h1>
+        <p class="lead">Soy Jose Armando Diaz Salazar, desarrollador de software.</p>
+        <p>Me gusta construir programas que se entienden, se prueban y se pueden ejecutar igual en mi equipo que en el servidor. Trabajo a diario con Python y JavaScript, uso Docker para que todo sea reproducible y Linux como mi entorno de trabajo.</p>
+        <p>Escribe aquí un párrafo sobre tu trayectoria, estudios o lo que estás aprendiendo ahora.</p>
+
+        <h2>Con qué trabajo</h2>
+        <dl class="skills">
+          <div><dt>Python</dt><dd>Servicios, scripts y automatización.</dd></div>
+          <div><dt>JavaScript</dt><dd>Interfaces web e interacción en el navegador.</dd></div>
+          <div><dt>Docker</dt><dd>Contenedores para desarrollo y despliegue.</dd></div>
+          <div><dt>Linux</dt><dd>Terminal, servidores y administración de sistemas.</dd></div>
+        </dl>
+        <a class="btn btn-primary" href="contact.html">Hablemos</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Jose Armando Diaz Salazar</p>
+    <p><a href="index.html">Inicio</a> · <a href="contact.html">Contacto</a></p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>

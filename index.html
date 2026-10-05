@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Jose Armando Diaz Salazar | Desarrollador de software</title>
+  <meta name="description" content="Portafolio de Jose Armando Diaz Salazar, desarrollador de software con Python, JavaScript, Docker y Linux.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="index.html">J. Armando Diaz</a>
+    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">Menú</button>
+    <nav id="menu" class="nav">
+      <a href="index.html" aria-current="page">Inicio</a>
+      <a href="about.html">Sobre mí</a>
+      <a href="index.html#proyectos">Proyectos</a>
+      <a href="contact.html">Contacto</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-text">
+        <p class="kicker">Desarrollador de software</p>
+        <h1>Jose Armando<br>Diaz Salazar</h1>
+        <p class="lead">Escribo software en Python y JavaScript, lo empaqueto con Docker y lo dejo funcionando en Linux.</p>
+        <div class="actions">
+          <a class="btn btn-primary" href="#proyectos">Ver proyectos</a>
+          <a class="btn btn-ghost" href="contact.html">Escríbeme</a>
+        </div>
+        <ul class="stack" aria-label="Tecnologías">
+          <li>Python</li><li>JavaScript</li><li>Docker</li><li>Linux</li>
+        </ul>
+      </div>
+      <figure class="hero-photo">
+        <img src="img/foto-1.jpeg" alt="Retrato de Jose Armando Diaz Salazar con traje negro" width="528" height="1100">
+      </figure>
+    </section>
+
+    <section class="section" id="proyectos">
+      <div class="section-head">
+        <h2>Proyectos</h2>
+        <div class="filters" role="group" aria-label="Filtrar proyectos">
+          <button class="chip is-active" data-filter="all">Todos</button>
+          <button class="chip" data-filter="python">Python</button>
+          <button class="chip" data-filter="javascript">JavaScript</button>
+          <button class="chip" data-filter="docker">Docker</button>
+        </div>
+      </div>
+      <p class="note">Proyectos de ejemplo: reemplaza títulos, descripciones y enlaces por los tuyos.</p>
+      <div class="grid">
+        <article class="card" data-tech="python docker">
+          <h3>API de inventario</h3>
+          <p>Servicio REST para controlar existencias, con pruebas automatizadas y despliegue en contenedor.</p>
+          <p class="tags">Python · Docker</p>
+          <a class="link" href="#" rel="noopener">Ver código</a>
+        </article>
+        <article class="card" data-tech="javascript">
+          <h3>Panel de métricas</h3>
+          <p>Tablero web en JavaScript puro que muestra indicadores en tiempo real sin librerías externas.</p>
+          <p class="tags">JavaScript</p>
+          <a class="link" href="#" rel="noopener">Ver código</a>
+        </article>
+        <article class="card" data-tech="docker python">
+          <h3>Entorno de desarrollo reproducible</h3>
+          <p>Imágenes de Docker y scripts para levantar el mismo entorno en cualquier máquina Linux con un comando.</p>
+          <p class="tags">Docker · Python · Linux</p>
+          <a class="link" href="#" rel="noopener">Ver código</a>
+        </article>
+        <article class="card" data-tech="python">
+          <h3>Automatización de tareas en Linux</h3>
+          <p>Scripts que respaldan archivos, rotan registros y avisan cuando algo falla.</p>
+          <p class="tags">Python · Linux</p>
+          <a class="link" href="#" rel="noopener">Ver código</a>
+        </article>
+      </div>
+      <p class="empty" hidden>No hay proyectos con ese filtro.</p>
+    </section>
+
+    <section class="section cta-band">
+      <h2>¿Tienes un proyecto en mente?</h2>
+      <a class="btn btn-primary" href="contact.html">Contáctame</a>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>© <span id="year">2026</span> Jose Armando Diaz Salazar</p>
+    <p><a href="about.html">Sobre mí</a> · <a href="contact.html">Contacto</a></p>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
