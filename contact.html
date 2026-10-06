@@ -1,62 +1,6 @@
-<!DOCTYPE html>
-<html lang="es">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contacto | Jose Armando Diaz Salazar</title>
-  <meta name="description" content="Escribe a Jose Armando Diaz Salazar para colaborar en un proyecto.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700;800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/styles.css">
-</head>
-<body>
-  <header class="site-header">
-    <a class="brand" href="index.html">J. Armando Diaz</a>
-    <button class="nav-toggle" aria-label="Abrir menú" aria-expanded="false" aria-controls="menu">Menú</button>
-    <nav id="menu" class="nav">
-      <a href="index.html">Inicio</a>
-      <a href="about.html">Sobre mí</a>
-      <a href="index.html#proyectos">Proyectos</a>
-      <a href="contact.html" aria-current="page">Contacto</a>
-    </nav>
-  </header>
-
-  <main>
-    <section class="section contact">
-      <div class="contact-info">
-        <h1>Contacto</h1>
-        <p class="lead">Cuéntame qué necesitas y te respondo por correo.</p>
-        <ul class="contact-list">
-          <li><span>Correo</span><a href="mailto:tucorreo@ejemplo.com">tucorreo@ejemplo.com</a></li>
-          <li><span>GitHub</span><a href="https://github.com/tu-usuario" rel="noopener">github.com/tu-usuario</a></li>
-          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/tu-usuario" rel="noopener">linkedin.com/in/tu-usuario</a></li>
-        </ul>
-      </div>
-
-      <form id="contact-form" class="form" novalidate>
-        <label for="nombre">Nombre</label>
-        <input id="nombre" name="nombre" type="text" autocomplete="name" required>
-        <p class="error" data-for="nombre"></p>
-
-        <label for="email">Correo electrónico</label>
-        <input id="email" name="email" type="email" autocomplete="email" required>
-        <p class="error" data-for="email"></p>
-
-        <label for="mensaje">Mensaje</label>
-        <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
-        <p class="error" data-for="mensaje"></p>
-
-        <button class="btn btn-primary" type="submit">Enviar mensaje</button>
-        <p class="form-status" role="status" aria-live="polite"></p>
-      </form>
-    </section>
-  </main>
-
-  <footer class="site-footer">
-    <p>© <span id="year">2026</span> Jose Armando Diaz Salazar</p>
-    <p><a href="index.html">Inicio</a> · <a href="about.html">Sobre mí</a></p>
-  </footer>
-  <script src="js/script.js"></script>
-</body>
-</html>
+<!DOCTYPE html><html lang="es"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1.0"><title>Contacto | José Armando Diaz Salazar</title><link rel="stylesheet" href="css/styles.css"></head><body>
+<header class="header"><nav class="navbar"><a class="logo" href="index.html">JA<span>.</span></a><button class="menu-toggle" id="menuToggle"><span></span><span></span><span></span></button><ul class="nav-menu" id="navMenu"><li><a class="nav-link" href="index.html">Inicio</a></li><li><a class="nav-link" href="about.html">Sobre mí</a></li><li><a class="nav-link" href="index.html#proyectos">Proyectos</a></li><li><a class="nav-link active" href="contact.html">Contacto</a></li></ul></nav></header>
+<main><section class="page-hero"><div class="page-hero-content"><p class="section-label">Contacto</p><h1>Hablemos de tu <span>próximo proyecto.</span></h1><p>Si tienes una idea, proyecto o quieres conocer más sobre mi trabajo, puedes enviarme un mensaje.</p></div></section>
+<section class="contact-section section"><div><p class="section-label">Información</p><h2>Ponte en contacto conmigo</h2><p>Estoy interesado en conocer nuevas ideas, proyectos y oportunidades relacionadas con el desarrollo de software.</p><div class="contact-details"><div class="contact-detail"><div class="contact-icon">@</div><div><span>Correo</span><a href="mailto:tu-correo@ejemplo.com">tu-correo@ejemplo.com</a></div></div><div class="contact-detail"><div class="contact-icon">GH</div><div><span>GitHub</span><a href="https://github.com/" target="_blank">github.com</a></div></div><div class="contact-detail"><div class="contact-icon">IN</div><div><span>LinkedIn</span><a href="https://www.linkedin.com/" target="_blank">LinkedIn</a></div></div></div></div>
+<div class="contact-form-container"><form id="contactForm"><div class="form-group"><label for="name">Nombre</label><input id="name" required placeholder="Tu nombre"></div><div class="form-group"><label for="email">Correo electrónico</label><input id="email" type="email" required placeholder="tu@email.com"></div><div class="form-group"><label for="subject">Asunto</label><input id="subject" required placeholder="¿De qué quieres hablar?"></div><div class="form-group"><label for="message">Mensaje</label><textarea id="message" rows="6" required placeholder="Escribe tu mensaje..."></textarea></div><button class="btn btn-primary form-button" type="submit">Enviar mensaje</button><p id="formMessage" class="form-message"></p></form></div></section></main>
+<footer class="footer"><div class="footer-content"><div><a class="logo" href="index.html">JA<span>.</span></a><p>José Armando Diaz Salazar</p></div><div class="footer-links"><a href="index.html">Inicio</a><a href="about.html">Sobre mí</a><a href="contact.html">Contacto</a></div></div><div class="footer-bottom">© <span id="currentYear"></span> José Armando Diaz Salazar. Todos los derechos reservados.</div></footer><script src="js/script.js"></script></body></html>
