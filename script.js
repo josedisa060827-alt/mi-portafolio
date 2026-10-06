@@ -1,1 +1,24 @@
-const menuToggle=document.getElementById("menuToggle"),navMenu=document.getElementById("navMenu");if(menuToggle&&navMenu){menuToggle.addEventListener("click",()=>navMenu.classList.toggle("active"));document.querySelectorAll(".nav-link").forEach(a=>a.addEventListener("click",()=>navMenu.classList.remove("active")))}const y=document.getElementById("currentYear");if(y)y.textContent=new Date().getFullYear();const skills=document.querySelectorAll(".skill-progress");if(skills.length){const o=new IntersectionObserver(e=>e.forEach(x=>{if(x.isIntersecting){skills.forEach(s=>s.style.width=s.dataset.progress+"%");o.disconnect()}}),{threshold:.3});const sec=document.querySelector(".skills-list");if(sec)o.observe(sec)}const form=document.getElementById("contactForm");if(form)form.addEventListener("submit",e=>{e.preventDefault();const n=document.getElementById("name").value.trim(),m=document.getElementById("email").value.trim(),s=document.getElementById("subject").value.trim(),b=document.getElementById("message").value.trim(),out=document.getElementById("formMessage");if(!n||!m||!s||!b){out.textContent="Completa todos los campos.";return}if(!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(m)){out.textContent="Introduce un correo válido.";return}window.location.href="mailto:tu-correo@ejemplo.com?subject="+encodeURIComponent(s)+"&body="+encodeURIComponent("Nombre: "+n+"\nCorreo: "+m+"\n\nMensaje:\n"+b);out.textContent="Abriendo tu cliente de correo..."})
+document.getElementById('year').textContent = new Date().getFullYear();
+
+// Resalta en el menú la sección que se está viendo
+const links = document.querySelectorAll('nav a');
+const obs = new IntersectionObserver(function (items) {
+  items.forEach(function (it) {
+    if (it.isIntersecting) {
+      links.forEach(function (a) {
+        a.classList.toggle('on', a.getAttribute('href') === '#' + it.target.id);
+      });
+    }
+  });
+}, { rootMargin: '-40% 0px -55% 0px' });
+document.querySelectorAll('main section').forEach(function (s) { obs.observe(s); });
+
+// Formulario: abre la app de correo con el mensaje ya escrito
+const form = document.getElementById('form');
+form.addEventListener('submit', function (e) {
+  e.preventDefault();
+  const d = new FormData(form);
+  const cuerpo = encodeURIComponent(d.get('mensaje') + '\n\n— ' + d.get('nombre') + ' (' + d.get('correo') + ')');
+  document.getElementById('msg').textContent = 'Abriendo tu app de correo…';
+  window.location.href = 'mailto:TU_CORREO@ejemplo.com?subject=Contacto desde tu portafolio&body=' + cuerpo;
+});
